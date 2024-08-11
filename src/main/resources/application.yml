@@ -1,0 +1,20 @@
+# spring configurations
+spring:
+  datasource:
+    url: jdbc:h2:mem:formDB
+    username: ${H2_USERNAME}
+    password: ${H2_PASSWORD}
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# server configuration
+server:
+  port: 8090
+
