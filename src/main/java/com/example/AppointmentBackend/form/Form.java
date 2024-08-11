@@ -1,20 +1,13 @@
 package com.example.AppointmentBackend.form;
 
+import jakarta.persistence.*;
 import lombok.*;
-import jakarta.persistence.Id;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 
-@Entity // makes it available for Java ORM
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data // create getters & setters
 public class Form {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     @NonNull
     private String fullName;
 
@@ -32,4 +25,9 @@ public class Form {
 
     @NonNull
     private String appointmentReason;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
 }
