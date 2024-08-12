@@ -1,4 +1,4 @@
-package com.example.AppointmentBackend.sms;
+package com.example.AppointmentBackend.sms.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

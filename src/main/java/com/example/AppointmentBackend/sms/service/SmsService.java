@@ -1,6 +1,8 @@
-package com.example.AppointmentBackend.sms;
+package com.example.AppointmentBackend.sms.service;
 
-import com.example.AppointmentBackend.form.FormRepository;
+import com.example.AppointmentBackend.form.repository.FormRepository;
+import com.example.AppointmentBackend.sms.config.TwilioConfig;
+import com.example.AppointmentBackend.sms.model.Sms;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.rest.api.v2010.account.MessageCreator;
 import com.twilio.type.PhoneNumber;
@@ -25,9 +27,9 @@ public class SmsService {
 
     public void sendSms(String otp) {
         Sms sms = new Sms();
-        sms.setPhoneNumber(formRepository.findFirstRowPhoneNumber());
+        sms.setPhoneNumber(formRepository.findLastRowPhoneNumber());
         sms.setMessage("Hey \uD83D\uDC4B, "
-                + formRepository.findFirstRowFullName()
+                + formRepository.findLastRowFullName()
                 + ". Thanks for registering with BeKind \uD83D\uDC9A, here is your otp : "
                 + otp
         );

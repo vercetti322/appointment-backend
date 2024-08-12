@@ -1,5 +1,7 @@
-package com.example.AppointmentBackend.form;
+package com.example.AppointmentBackend.form.controller;
 
+import com.example.AppointmentBackend.form.service.FormService;
+import com.example.AppointmentBackend.form.model.Form;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

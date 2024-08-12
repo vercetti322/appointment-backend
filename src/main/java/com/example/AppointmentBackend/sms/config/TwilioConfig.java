@@ -1,4 +1,4 @@
-package com.example.AppointmentBackend.sms;
+package com.example.AppointmentBackend.sms.config;
 
 import com.twilio.Twilio;
 import jakarta.annotation.PostConstruct;

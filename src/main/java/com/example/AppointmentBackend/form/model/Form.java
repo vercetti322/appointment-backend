@@ -1,4 +1,4 @@
-package com.example.AppointmentBackend.form;
+package com.example.AppointmentBackend.form.model;
 
 import jakarta.persistence.*;
 import lombok.*;

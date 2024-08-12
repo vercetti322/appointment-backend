@@ -1,5 +1,7 @@
-package com.example.AppointmentBackend.form;
+package com.example.AppointmentBackend.form.service;
 
+import com.example.AppointmentBackend.form.model.Form;
+import com.example.AppointmentBackend.form.repository.FormRepository;
 import org.springframework.stereotype.Service;
 
 @Service

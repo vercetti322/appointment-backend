@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail Template</title>
+</head>
+<body>
+<h1>BeKind 💚</h1>
+    <p style="font-size: 16px; color: darkslategray">
+        Hey <span style="font-weight: bold" th:text="${firstName}"></span>👋. Thank you so much for applying with us 😊.
+        It's our job to provide quality support and care.
+    </p>
+    <p style="margin-top: 8px; font-size: 14px">
+        Based on your date & time preferences, we are suggesting the session
+        at <span style="font-weight: bold" th:text="${time}">19:30 pm IST</span> on
+        <span style="font-weight: bold" th:text="${date}">20th October</span> 📅.
+    </p>
+    <p style="margin-top: 8px; font-size: 14px; color: crimson">Contact us at +19784867945</p>
+    <p style="margin-top: 2px; font-size: 14px;">Stay safe! 🙌</p>
+</body>
+</html>
+
+<style>
+    body h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
